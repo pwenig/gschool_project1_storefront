@@ -40,3 +40,5 @@ group :test, :develoment do
   gem 'capybara', '~> 2.2.1'
   gem 'rspec-rails', '~> 2.14.2'
 end
+
+gem 'rails_12factor', group: :production
