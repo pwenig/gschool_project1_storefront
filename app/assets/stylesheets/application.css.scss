@@ -15,77 +15,71 @@
  */
 
 #nav_container {
-    margin: auto;
-    width: 960px;
+  margin: auto;
+  width: 960px;
 }
 
 nav {
-    background-color: #E0E4CC;
-    opacity: 0.7;
-    overflow: hidden;
+  background-color: #E0E4CC;
+  opacity: 0.7;
+  overflow: hidden;
 }
 
 #menu {
-    float: right; /* or float: left */
-    margin: 0 10px 0 0;
+  float: right; /* or float: left */
+  margin: 0 10px 0 0;
 }
 
 #menu li {
-    float: left;
-    list-style: none;
+  float: left;
+  list-style: none;
 }
 
 #menu li a {
-    font-size: 120%;
-    font-weight: bold;
-    color: #fff;
-    padding: 17px 25px 15px 25px;
-    display: block;
-    text-decoration: none;
+  font-size: 120%;
+  font-weight: bold;
+  color: black;
+  padding: 17px 25px 15px 25px;
+  display: block;
+  text-decoration: none;
 }
 
 #menu li a:hover {
-    color: #fff;
-    background-color: #3b2c2c;
+  color: #fff;
+  background-color: #3b2c2c;
 }
 
 /*Borders between each button */
-#menu li+li {
-    border-left: 1px solid #000;
+#menu li + li {
+  border-left: 1px solid #000;
 }
 
 /*Borders on both sides */
 #menu li:first-child a {
-    border-left: 1px solid #000;
+  border-left: 1px solid #000;
 }
+
 #menu li:last-child a {
-    border-right: 1px solid #000;
-}
-
-
-header {
-    background-color: #F38630;
-    opacity: 0.7;
-    height: 50px;
+  border-right: 1px solid #000;
 }
 
 body {
-    background-color: #A7DBD8;
+  background-color: whitesmoke;
+  background-image: asset-url("small_business.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 #main_container {
-    background-image: asset-url("small_business.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 1080px;
-    min-height: 500px;
-    margin-left: 100px;
+  min-height: 500px;
+
 }
 
 #about_container {
-    background-color: #E0E4CC;
-    width: 1080px;
-    min-height: 250px;
-    margin-left: 100px;
+  background-color: #E0E4CC;
+  opacity: 0.7;
+  margin: auto;
+  width: 960px;
+  min-height: 150px;
 
 }
