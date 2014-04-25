@@ -9,3 +9,7 @@ DEVELOPMENT
 3. Run migrations with rake db:migrate
 4. Run migrations in test database with RACK_ENV=test rake db:migrate
 5. Run tests using rspec
+
+HEROKU
+
+[http://desolate-wave-2179.herokuapp.com/](http://desolate-wave-2179.herokuapp.com/)
