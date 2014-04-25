@@ -12,4 +12,4 @@ DEVELOPMENT
 
 HEROKU
 
-[http://desolate-wave-2179.herokuapp.com/](http://desolate-wave-2179.herokuapp.com/)
+(http://desolate-wave-2179.herokuapp.com/)
