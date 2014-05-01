@@ -24,5 +24,22 @@
   <h3>Storefront is an application that will feature vacant storefronts and allow users to suggest
     and vote about for what type of business they would like to see there.</h3>
 
+  <% @property.each do |property| %>
+    <p>Address: <%=property.address %></p>
+    <p>City: <%=property.city %></p>
+    <p>State: <%=property.state %></p>
+    <p>Description: <%=property.description %></p>
+    <img src="<%= property.image_url %>">
+    <% end %>
+
+  <form action="/" method="post">
+    <input type="text" name="address" placeholder="address"><br><br>
+    <input type="text" name="city" placeholder="city"><br><br>
+    <input type="text" name="state" placeholder="state"><br><br>
+    <input type="text" name="description" placeholder="description"><br><br>
+    <input type="text" name="image_url" placeholder="image url"><br><br>
+    <input type="submit" value="Add Listing">
+  </form>
+
 </div>
 </body>

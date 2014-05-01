@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root 'property#index'
 
-  resources :properties
+  post '/' => "property#create"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
