@@ -14,13 +14,14 @@
  *= require_self
  */
 
+
 #nav_container {
   margin: auto;
   width: 960px;
 }
 
 nav {
-  background-color: #E0E4CC;
+  background-color: #045FB4;
   opacity: 0.7;
   overflow: hidden;
 }
@@ -36,9 +37,9 @@ nav {
 }
 
 #menu li a {
-  font-size: 120%;
+  font-size: 100%;
   font-weight: bold;
-  color: black;
+  color: gray;
   padding: 17px 25px 15px 25px;
   display: block;
   text-decoration: none;
@@ -65,27 +66,49 @@ nav {
 
 body {
   background-color: whitesmoke;
-  background-image: asset-url("small_business.png");
-  background-size: cover;
+//  background-image: asset-url("small_business.png");
 //  background-size: cover;
-  background-repeat: no-repeat;
-}
+////  background-size: cover;
+//  background-repeat: no-repeat;
+//}
 
-#main_container {
-  min-height: 500px;
-
+//#main_container {
+//  min-height: 500px;
+//
 }
 
 #about_container {
-  background-color: #E0E4CC;
+  background-image: asset-url("small_business.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  margin: auto;
+  width: 1400px;
+  min-height: 500px;
+  color: white;
+}
+
+#listing_container {
+  background-color: #ffffff;
   opacity: 0.7;
   margin: auto;
-  width: 960px;
+  width: 1400px;
   min-height: 500px;
 
 }
 
+#add_prop_container {
+  text-align: center;
+  background-color: #E0E4CC;
+  opacity: 0.7;
+  margin: auto;
+  width: 1400px;
+  min-height: 500px;
+
+}
+
+
 img {
   width: 300px;
-  height: 300px
+  height: 300px;
 }

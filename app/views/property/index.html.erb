@@ -11,19 +11,20 @@
 </head>
 <body>
 
-<div id="main_container">
-
-
-</div>
 
 <div id="about_container">
 
   <a name="about"></a>
 
   <h2>About Storefront</h2>
-  <h3>Storefront is an application that will feature vacant storefronts and allow users to suggest
-    and vote about for what type of business they would like to see there.</h3>
+  <h3>Have you ever walked by a vacant storefront and said to yourself, "I wish
+  this was a _____ right here". Or "wouldn't it be great if this was a _______ store". Storefront
+  allows you to let your wishes be heard. Make a suggestion and let your voice be heard.</h3>
+</div>
 
+
+<a name="listing"></a>
+ <div id="listing_container">
   <% @property.each do |property| %>
     <p>Address: <%=property.address %></p>
     <p>City: <%=property.city %></p>
@@ -31,15 +32,19 @@
     <p>Description: <%=property.description %></p>
     <img src="<%= property.image_url %>">
     <% end %>
+ </div>
 
-  <form action="/" method="post">
-    <input type="text" name="address" placeholder="address"><br><br>
-    <input type="text" name="city" placeholder="city"><br><br>
-    <input type="text" name="state" placeholder="state"><br><br>
-    <input type="text" name="description" placeholder="description"><br><br>
-    <input type="text" name="image_url" placeholder="image url"><br><br>
-    <input type="submit" value="Add Listing">
-  </form>
+<a name="add"></a>
 
+<div id="add_prop_container">
+<form action="/" method="post">
+  <input type="text" name="address" placeholder="address"><br><br>
+  <input type="text" name="city" placeholder="city"><br><br>
+  <input type="text" name="state" placeholder="state"><br><br>
+  <input type="text" name="description" placeholder="description"><br><br>
+  <input type="text" name="image_url" placeholder="image url"><br><br>
+  <input type="submit" value="Add Listing">
+</form>
 </div>
+
 </body>
