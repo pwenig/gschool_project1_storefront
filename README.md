@@ -1,9 +1,11 @@
 == README
 
+[![Build Status](https://travis-ci.org/pwenig/gschool_project1_storefront.svg?branch=master)](https://travis-ci.org/pwenig/gschool_project1_storefront)
+[![Code Climate](https://codeclimate.com/github/pwenig/gschool_project1_storefront.png)](https://codeclimate.com/github/pwenig/gschool_project1_storefront)
+
 #Storefront
 
 
-[![Code Climate](https://codeclimate.com/github/pwenig/gschool_project1_storefront.png)](https://codeclimate.com/github/pwenig/gschool_project1_storefront)
 
 ## Background
 The Storefront application allows users to suggest and vote on what they would like to see
@@ -27,13 +29,3 @@ Please follow the steps below to get this site set up for local development.
 1. Run migrations with rake db:migrate
 4. Run migrations in test database with RACK_ENV=test rake db:migrate
 5. Run tests using rspec
-<<<<<<< HEAD:README.md
-=======
-
-
-
-1. Step 1
-1. Step 2
-1. Step 3
-1. Step 4 ...
->>>>>>> 8ec990a0870de75a99d57d0de1455f2349a58a4a:README.rdoc
