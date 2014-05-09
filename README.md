@@ -26,10 +26,3 @@ Please follow the steps below to get this site set up for local development.
 1. Run migrations with rake db:migrate
 4. Run migrations in test database with RACK_ENV=test rake db:migrate
 5. Run tests using rspec
-
-
-
-1. Step 1
-1. Step 2
-1. Step 3
-1. Step 4 ...
