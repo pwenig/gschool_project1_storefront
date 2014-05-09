@@ -26,6 +26,35 @@ nav {
   overflow: hidden;
 }
 
+//search
+.search input.search_box {
+  width: 350px;
+  margin: 8px 0 8px 15px;
+  padding: 8px;
+  display: inline-block;
+
+
+}
+form.search {
+  display: inline-block;
+
+}
+
+.search_button {
+  background: #045FB4 asset-url("search_glass.png") no-repeat;
+  background-size: 20px;
+  width: 30px;
+  border: none;
+}
+
+
+//search end
+
+
+
+
+
+
 #menu {
   float: right; /* or float: left */
   margin: 0 10px 0 0;
@@ -66,15 +95,7 @@ nav {
 
 body {
   background-color: whitesmoke;
-//  background-image: asset-url("small_business.png");
-//  background-size: cover;
-////  background-size: cover;
-//  background-repeat: no-repeat;
-//}
 
-//#main_container {
-//  min-height: 500px;
-//
 }
 
 #about_container {
@@ -84,7 +105,7 @@ body {
   opacity: 0.8;
   margin: auto;
   width: 1400px;
-  min-height: 500px;
+  min-height: 600px;
   color: white;
 }
 
@@ -93,7 +114,7 @@ body {
   opacity: 0.7;
   margin: auto;
   width: 1400px;
-  min-height: 500px;
+  min-height: 300px;
 
 }
 
