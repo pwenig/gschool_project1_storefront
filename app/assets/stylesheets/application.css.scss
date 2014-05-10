@@ -17,6 +17,7 @@
 
 #nav_container {
   margin: auto;
+//  margin-left: 50px;
   width: 960px;
 }
 
@@ -29,7 +30,8 @@ nav {
 //search
 .search input.search_box {
   width: 350px;
-  margin: 8px 0 8px 15px;
+//  margin: 8px 0 8px 15px;
+  margin: 8px 0 8px 0px;
   padding: 8px;
   display: inline-block;
 
@@ -47,19 +49,43 @@ form.search {
   border: none;
 }
 
-
 //search end
 
+//store_list_input
+
+.store_list input.search_box {
+  width: 450px;
+  margin: 8px 0 8px 15px;
+  padding: 8px;
+  display: inline-block;
 
 
+}
+form.search {
+  display: inline-block;
+
+}
+
+.submit_button {
+
+    color: black;
+    font-size: 18px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background: gray;
+  }
 
 
+//store_list end
 
 #menu {
   float: right; /* or float: left */
-  margin: 0 10px 0 0;
-}
+    margin: 0 5px 0 0;
 
+}
 #menu li {
   float: left;
   list-style: none;
@@ -78,6 +104,15 @@ form.search {
   color: #fff;
   background-color: #3b2c2c;
 }
+
+
+
+
+
+
+
+
+
 
 /*Borders between each button */
 #menu li + li {
@@ -98,38 +133,104 @@ body {
 
 }
 
+
 #about_container {
-  background-image: asset-url("small_business.png");
+  background-color: whitesmoke;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 0.8;
   margin: auto;
-  width: 1400px;
-  min-height: 600px;
-  color: white;
+  width: 960px;
+  min-height: 100;
+  color: black;
+  font: arial, sans-serif;
+  font-size: 20px
 }
 
 #listing_container {
-  background-color: #ffffff;
-  opacity: 0.7;
+  background-image: asset-url("small_business.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.6;
   margin: auto;
   width: 1400px;
-  min-height: 300px;
+  min-height: 480px;
+  color: white;
+
 
 }
 
+
+img {
+  margin-left: 150px;
+  margin-top: 30px;
+  width: 350px;
+  height: 350px;
+//  border: 10px solid #000;
+  }
+
+
+p {
+  margin-right:100px;
+  color: white;
+  font-size: 20px;
+  text-align: left;
+
+}
+
+main {
+  margin-top: 100px;
+}
+article {
+  float: right;
+  border: 10px solid #000;
+  width: 45%;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-right: 200px;
+}
+article ul {
+  margin: 0px;
+  padding: 0;
+
+}
+
+li {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 18px;
+}
+article li {
+  background: #ccc;
+  margin: 5px 0;
+  list-style-type: none;
+  text-align: center;
+
+}
+article li a {
+  font: 20px;
+  color: #000;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+}
+article li a:hover {
+  background: blue;
+}
+
+article header {
+  background: black;
+  color: #fff;
+  font-size: 24px;
+
+}
 #add_prop_container {
   text-align: center;
   background-color: #E0E4CC;
   opacity: 0.7;
   margin: auto;
   width: 1400px;
-  min-height: 500px;
+  min-height: 200px;
 
 }
 
 
-img {
-  width: 300px;
-  height: 300px;
-}

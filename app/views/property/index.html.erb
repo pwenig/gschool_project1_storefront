@@ -2,7 +2,7 @@
 <head>
   <meta charset="UTF-8">
 
-
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
   <link href="/app/assets/stylesheets/application.css" rel="stylesheet" type="text/css"/>
 
   <link rel="stylesheet" type="text/css"
@@ -10,6 +10,31 @@
 
 </head>
 <body>
+  <a name="listing"></a>
+  <div id="listing_container">
+    <% @property.each do |property| %>
+      <img src="<%= property.image_url %>">
+      <!--<p>Address: <%=property.address %></p>-->
+      <!--<p>City: <%=property.city %></p>-->
+      <!--<p>State: <%=property.state %></p>-->
+      <!--<p>Description: <%=property.description %></p>-->
+    <% end %>
+
+
+  <article>
+    <header>I would like to see:</header>
+    <ul class="store_list">
+      <li><a href="#">A 24-hour dry cleaner.</a></li>
+      <li><a href="#">A brew pub with really good food!</a></li>
+      <li><a href="#">A good wine shop.</a></li>
+      <li><form class="store_input">
+        <input type="text" class="search_box" placeholder="What business would you like to see here?">
+        <input type="submit" class="submit_button" value="Submit" alt="Submit">
+      </form></li>
+    </ul>
+
+  </article>
+  </div>
 
 
 <div id="about_container">
@@ -17,22 +42,12 @@
   <a name="about"></a>
 
   <h2>About Storefront</h2>
-  <h3>Have you ever walked by a vacant storefront and said to yourself, "I wish
-  this was a _____ right here". Or "wouldn't it be great if this was a _______ store". Storefront
-  allows you to let your wishes be heard. Make a suggestion and let your voice be heard.</h3>
+  <h3>Storefront is a place where your voice can be heard. It's a place to share your
+  ideas for businesses you would like to see in your community.</h3>
 </div>
 
 
-<a name="listing"></a>
- <div id="listing_container">
-  <% @property.each do |property| %>
-    <p>Address: <%=property.address %></p>
-    <p>City: <%=property.city %></p>
-    <p>State: <%=property.state %></p>
-    <p>Description: <%=property.description %></p>
-    <img src="<%= property.image_url %>">
-    <% end %>
- </div>
+
 
 <a name="add"></a>
 
