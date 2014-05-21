@@ -2,11 +2,17 @@
 <html>
 <head>
   <title>Storefront</title>
+  <link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+  <link href="/app/assets/stylesheets/application.css" rel="stylesheet" type="text/css"/>
+
+  <link rel="stylesheet" type="text/css"
+        href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 
+<body>
 
 
 <nav>
@@ -24,15 +30,15 @@
 
 
   </div>
-  </nav>
+</nav>
 
 
-
-
-
-<body>
 
 <%= yield %>
 
 </body>
+
+<footer>
+  <p>Some footer info will go here</p>
+</footer>
 </html>

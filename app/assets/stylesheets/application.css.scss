@@ -10,14 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+*= require_tree .
+*= require_self
  */
 
 
+//
 #nav_container {
   margin: auto;
-//  margin-left: 50px;
+  //  margin-left: 50px;
   width: 960px;
 }
 
@@ -30,7 +31,6 @@ nav {
 //search
 .search input.search_box {
   width: 350px;
-//  margin: 8px 0 8px 15px;
   margin: 8px 0 8px 0px;
   padding: 8px;
   display: inline-block;
@@ -42,6 +42,7 @@ form.search {
 
 }
 
+
 .search_button {
   background: #045FB4 asset-url("search_glass.png") no-repeat;
   background-size: 20px;
@@ -51,16 +52,7 @@ form.search {
 
 //search end
 
-//store_list_input
 
-.store_list input.search_box {
-  width: 450px;
-  margin: 8px 0 8px 15px;
-  padding: 8px;
-  display: inline-block;
-
-
-}
 form.search {
   display: inline-block;
 
@@ -68,22 +60,21 @@ form.search {
 
 .submit_button {
 
-    color: black;
-    font-size: 18px;
-    width: 120px;
-    height: 40px;
-    border: none;
-    margin: 0;
-    padding: 0;
-    background: gray;
-  }
+  color: black;
+  font-size: 18px;
+  width: 120px;
+  height: 40px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: gray;
+}
 
 
-//store_list end
 
 #menu {
   float: right; /* or float: left */
-    margin: 0 5px 0 0;
+  margin: 0 5px 0 0;
 
 }
 #menu li {
@@ -94,7 +85,7 @@ form.search {
 #menu li a {
   font-size: 100%;
   font-weight: bold;
-  color: gray;
+  color: black;
   padding: 17px 25px 15px 25px;
   display: block;
   text-decoration: none;
@@ -104,13 +95,6 @@ form.search {
   color: #fff;
   background-color: #3b2c2c;
 }
-
-
-
-
-
-
-
 
 
 
@@ -148,73 +132,57 @@ body {
 }
 
 #listing_container {
-  background-image: asset-url("small_business.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.6;
-  margin: auto;
-  width: 1400px;
-  min-height: 480px;
-  color: white;
-
+  background-color: lightgray;
+  min-height: 300px;
+  color: black;
 
 }
 
 
 img {
-  margin-left: 150px;
-  margin-top: 30px;
-  width: 350px;
-  height: 350px;
-//  border: 10px solid #000;
-  }
+  width: 300px;
+  height: 300px;
+}
 
 
 p {
-  margin-right:100px;
-  color: white;
-  font-size: 20px;
-  text-align: left;
+  color: black;
+  font-size: 16px;
 
 }
 
 main {
   margin-top: 100px;
 }
-article {
-  float: right;
-  border: 10px solid #000;
-  width: 45%;
+#idea_container {
+  border: 1px solid #000;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-right: 200px;
 }
-article ul {
+#idea_container ul {
   margin: 0px;
   padding: 0;
 
 }
 
-li {
+#idea_container li {
   font-family: 'Permanent Marker', cursive;
   font-size: 18px;
-}
-article li {
   background: #ccc;
   margin: 5px 0;
   list-style-type: none;
   text-align: center;
+  color: #000;
 
 }
-article li a {
-  font: 20px;
-  color: #000;
-  text-decoration: none;
+#idea_container li a {
   display: block;
+  text-decoration: none;
   padding: 20px;
+
 }
-article li a:hover {
+#idea_container li a:hover {
   background: blue;
+  color: #ffffff;
 }
 
 article header {
@@ -234,3 +202,55 @@ article header {
 }
 
 
+
+#header_container,
+#nav_container,
+#content_container,
+#footer_container {
+  margin: auto;
+  width: 960px;
+}
+
+header {
+  background-color: #00A0B0;
+}
+
+nav {
+  background-color: #00A0B0;
+  overflow: hidden;
+}
+
+#content {
+  background-color: white;
+}
+
+
+footer {
+  background-color: orange;
+  min-height: 4em;
+}
+
+
+
+
+
+/* ----- =columns ----- */
+
+.one_half {width:460px;}
+.one_third {width:300px;}
+.two_third {width:620px;}
+.one_fourth {width:220px;}
+.three_fourth {width:700px;}
+.full_column {width:940px;}
+
+.one_half, .one_third, .two_third, .three_fourth, .one_fourth, .full_column {
+  position:relative;
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:20px;
+  float:left;
+}
+
+.resetColumnSet {clear:both;}
+
+/* ----- =menu (Primary Nav) ----- */
