@@ -1,4 +1,4 @@
-class PropertyController < ApplicationController
+class Properties < ApplicationController
 
   def index
     @property = Property.all

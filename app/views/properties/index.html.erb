@@ -5,9 +5,9 @@
     <div class="one_third">
       <a name="listing"></a>
       <div id="listing_container">
-        <% @property.each do |property| %>
+        <% @properties.each do |property| %>
           <img src="<%= property.image_url %>">
-          <p>Address: <%=property.address %></p>
+          <p>Address: <a href="/properties/<%= property.id %>"><%=property.address %></a></p>
           <p>City: <%=property.city %></p>
           <p>State: <%=property.state %></p>
           <p>Description: <%=property.description %></p>
