@@ -1,0 +1,24 @@
+<div class ="property_form">
+
+<%= form_for @property do |p| %>
+
+    <p><%= p.label :address, 'Address', class: 'field_style' %>
+    <%= p.text_field :address, class: 'text_box_style', autofocus: 'autofocus' %></p>
+
+  <p><%= p.label :city, 'City' %>
+    <%= p.text_field :city %></p>
+
+  <p><%= p.label :state, 'State' %>
+    <%= p.text_field :state %></p>
+
+  <p><%= p.label :description, 'Description' %>
+    <%= p.text_field :description %></p>
+
+  <p><%= p.label :image_url, "Image URL" %>
+    <%= p.text_field :image_url %></p>
+
+  <p><%= p.submit "Add Listing" %></p>
+
+<% end %>
+
+</div>
