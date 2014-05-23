@@ -1,22 +1,31 @@
-class Properties < ApplicationController
+class PropertiesController < ApplicationController
 
   def index
-    @property = Property.all
+    @properties = Property.all
   end
 
   def new
+  @property = Property.new
+  end
 
+  def show
+  @property = Property.find(params[:id])
+  end
+
+  def update
+    @property = Property.find(params[:id])
+    @property.update_attributes(property_params)
+    redirect_to '/'
   end
 
   def create
-    create_property = Property.new
-    create_property.address     =  params[:address]
-    create_property.city        =  params[:city]
-    create_property.state       =  params[:state]
-    create_property.description =  params[:description]
-    create_property.image_url   =  params[:image_url]
-    create_property.save
+    Property.create(property_params)
     redirect_to '/'
+  end
+
+  private
+  def property_params
+    params.require(:property).permit(:address, :city, :state, :description, :image_url)
   end
 
 
