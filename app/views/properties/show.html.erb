@@ -23,6 +23,12 @@
 
   <% end %>
 
+
+  <form action="/properties/<%= @property.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <li><input type="submit" value="Delete"></li>
+  </form>
+
 </div>
 
 

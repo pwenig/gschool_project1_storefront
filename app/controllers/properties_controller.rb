@@ -5,11 +5,11 @@ class PropertiesController < ApplicationController
   end
 
   def new
-  @property = Property.new
+    @property = Property.new
   end
 
   def show
-  @property = Property.find(params[:id])
+    @property = Property.find(params[:id])
   end
 
   def update
@@ -20,6 +20,12 @@ class PropertiesController < ApplicationController
 
   def create
     Property.create(property_params)
+    redirect_to '/'
+  end
+
+  def destroy
+    @property = Property.find(params[:id])
+    @property.destroy
     redirect_to '/'
   end
 
