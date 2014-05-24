@@ -1,34 +1,34 @@
-<h2>Edit Listing</h2>
+<div id="content">
+  <div id="content_container">
 
-<div class ="property_form">
+    <!--  1/3 x 2/3 -->
+    <div class="one_third">
+      <a name="listing"></a>
+      <div id="listing_container">
+          <img src="<%= @property.image_url %>">
+          <p>Address: <a href="/properties/<%= @property.id %>/edit"><%=@property.address %></a></p>
+          <p>City: <%= @property.city %></p>
+          <p>State: <%= @property.state %></p>
+          <p>Description: <%= @property.description %></p>
+      </div>
+    </div>
 
-  <%= form_for @property do |p| %>
-
-    <p><%= p.label :address, 'Address', valueclass: 'field_style' %>
-      <%= p.text_field :address, class: 'text_box_style', autofocus: 'autofocus' %></p>
-
-    <p><%= p.label :city, 'City' %>
-      <%= p.text_field :city %></p>
-
-    <p><%= p.label :state, 'State' %>
-      <%= p.text_field :state %></p>
-
-    <p><%= p.label :description, 'Description' %>
-      <%= p.text_field :description %></p>
-
-    <p><%= p.label :image_url, "Image URL" %>
-      <%= p.text_field :image_url %></p>
-
-    <p><%= p.submit "Update Listing" %></p>
-
-  <% end %>
-
-
-  <form action="/properties/<%= @property.id %>" method="post">
-    <input type="hidden" name="_method" value="delete">
-    <li><input type="submit" value="Delete"></li>
-  </form>
-
-</div>
-
-
+    <div class="two_third">
+      <div id="idea_container">
+        <header>I would like to see:</header>
+        <ul>
+          <li><a href="#">Placeholder.</a></li>
+          <li><a href="#">Placeholder</a></li>
+          <li><a href="#">Placeholder</a></li>
+          <li><a href="#">Placeholder</a></li>
+          <li><a href="#">Family pizza restaurant.</a></li>
+          <li>
+            <form action="/" method="post" class="store_input">
+              <input type="text" class="search_box" placeholder="What business would you like to see here?">
+              <input type="submit" class="submit_button" value="Submit" alt="Submit">
+          </li>
+          </form>
+        </ul>
+      </div>
+    </div>
+    <div class="resetColumnSet"></div>
