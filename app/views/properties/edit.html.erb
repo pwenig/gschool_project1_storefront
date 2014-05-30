@@ -7,8 +7,9 @@
     <p><%= p.label :address, 'Address', valueclass: 'field_style' %>
       <%= p.text_field :address, class: 'text_box_style', autofocus: 'autofocus' %></p>
 
-    <p><%= p.label :neighborhood %>
-      <%= p.select :neighborhood, ['Pearl St', 'North Boulder', 'South Boulder'] %></p>
+    <p><%= p.label :neighborhood, 'Neighborhood' %></p>
+    <%= p.select :neighborhood_id, Neighborhood.all.map { |neighborhood| [neighborhood.name, neighborhood.id] },
+                 :include_blank => 'Select a neighborhood' %>
 
     <p><%= p.label :city, 'City' %>
       <%= p.text_field :city %></p>

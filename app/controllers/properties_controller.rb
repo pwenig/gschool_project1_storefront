@@ -1,8 +1,7 @@
 class PropertiesController < ApplicationController
 
   def index
-    @properties = Property.all
-    @property = Property.find(1)
+    @property = Property.first
     @idea = Idea.all
   end
 
@@ -25,7 +24,7 @@ class PropertiesController < ApplicationController
   end
 
   def create
-    Property.create(property_params)
+    @property = Property.create(property_params)
     redirect_to '/'
   end
 
@@ -37,7 +36,7 @@ class PropertiesController < ApplicationController
 
   private
   def property_params
-    params.require(:property).permit(:address, :city, :neighborhood, :state, :description, :image_url)
+    params.require(:property).permit(:address, :neighborhood_id, :city, :state, :description, :image_url)
   end
 
 

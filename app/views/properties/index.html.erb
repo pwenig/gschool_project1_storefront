@@ -1,3 +1,4 @@
+<% if @property.present? %>
 <div id="content">
   <div id="content_container">
 
@@ -5,15 +6,12 @@
     <div class="one_third">
       <a name="listing"></a>
       <div id="listing_container">
-        <% @properties.each do |property| %>
-          <img src="<%= property.image_url %>">
-          <p>Address: <a href='/properties/<%= property.id %>'><%=property.address %></a></p>
-          <p>Neighborhood: <%=property.neighborhood.name %></p>
-          <p>City: <%=property.city %></p>
-          <p>State: <%=property.state %></p>
-          <p>Description: <%=property.description %></p>
-
-        <% end %>
+        <img src="<%=@property.image_url %>">
+          <p>Address: <a href='/properties/<%= @property.id %>'><%=@property.address %></a></p>
+          <p>Neighborhood: <%=@property.neighborhood.name %></p>
+          <p>City: <%=@property.city %></p>
+          <p>State: <%=@property.state %></p>
+          <p>Description: <%=@property.description %></p>
       </div>
     </div>
 
@@ -24,7 +22,6 @@
          <% @property.ideas.each do |idea| %>
           <li><a href='#'<%= idea.id %>><%= idea.idea %></a></li>
             <% end %>
-
         </ul>
       </div>
     </div>
@@ -44,5 +41,7 @@
 
     <div class="resetColumnSet"></div>
 
+
   </div><!--end content_container-->
 </div><!--end content-->
+<% end %>

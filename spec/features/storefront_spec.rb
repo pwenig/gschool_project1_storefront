@@ -1,10 +1,16 @@
 require 'spec_helper'
 
 feature 'Managing list of commercial property' do
+
+  before  do
+    Neighborhood.create!(name: "North Boulder")
+  end
+
   scenario 'User can create' do
     visit '/'
     click_on 'Add Storefront'
     fill_in 'Address', with: "1900 Broadway"
+    select 'North Boulder', :from => 'Neighborhood'
     fill_in 'City', with: "Boulder"
     fill_in 'State', with: "CO"
     fill_in 'Description', with: "Store-front location in shopping center"
@@ -17,6 +23,7 @@ feature 'Managing list of commercial property' do
     visit '/'
     click_on 'Add Storefront'
     fill_in 'Address', with: "1900 Broadway"
+    select('North Boulder', :from => 'Neighborhood')
     fill_in 'City', with: "Boulder"
     fill_in 'State', with: "CO"
     fill_in 'Description', with: "Store-front location in shopping center"
@@ -32,6 +39,7 @@ feature 'Managing list of commercial property' do
     visit '/'
     click_on 'Add Storefront'
     fill_in 'Address', with: "1900 Broadway"
+    select('North Boulder', :from => 'Neighborhood')
     fill_in 'City', with: "Boulder"
     fill_in 'State', with: "CO"
     fill_in 'Description', with: "Store-front location in shopping center"
@@ -47,6 +55,7 @@ feature 'Managing list of commercial property' do
   visit '/'
   click_on 'Add Storefront'
   fill_in 'Address', with: "1900 Broadway"
+  select('North Boulder', :from => 'Neighborhood')
   fill_in 'City', with: "Boulder"
   fill_in 'State', with: "CO"
   fill_in 'Description', with: "Store-front location in shopping center"
