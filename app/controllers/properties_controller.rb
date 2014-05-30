@@ -2,6 +2,8 @@ class PropertiesController < ApplicationController
 
   def index
     @properties = Property.all
+    @property = Property.find(1)
+    @idea = Idea.all
   end
 
   def new
@@ -35,7 +37,7 @@ class PropertiesController < ApplicationController
 
   private
   def property_params
-    params.require(:property).permit(:address, :city, :state, :description, :image_url)
+    params.require(:property).permit(:address, :city, :neighborhood, :state, :description, :image_url)
   end
 
 

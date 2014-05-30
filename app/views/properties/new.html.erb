@@ -5,6 +5,9 @@
     <p><%= p.label :address, 'Address', class: 'field_style' %>
     <%= p.text_field :address, class: 'text_box_style', autofocus: 'autofocus' %></p>
 
+    <p><%= p.label :neighborhood %>
+    <%= p.select :neighborhood, ['Pearl St', 'North Boulder', 'South Boulder'] %></p>
+
   <p><%= p.label :city, 'City' %>
     <%= p.text_field :city %></p>
 
@@ -14,10 +17,10 @@
   <p><%= p.label :description, 'Description' %>
     <%= p.text_field :description %></p>
 
-  <p><%= p.label :image_url, "Image URL" %>
+  <p><%= p.label :image_url, 'Image URL' %>
     <%= p.text_field :image_url %></p>
 
-  <p><%= p.submit "Add Listing" %></p>
+  <p><%= p.submit 'Add Listing' %></p>
 
 <% end %>
 
