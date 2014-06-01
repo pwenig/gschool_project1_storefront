@@ -7,15 +7,10 @@
 
       <div id="listing_container">
         <img src="<%= @property.image_url %>">
-
         <p>Address: <a href="/properties/<%= @property.id %>/edit"><%= @property.address %></a></p>
-
         <p>Neighborhood: <%= @property.neighborhood.name %></p>
-
         <p>City: <%= @property.city %></p>
-
         <p>State: <%= @property.state %></p>
-
         <p>Description: <%= @property.description %></p>
       </div>
     </div>

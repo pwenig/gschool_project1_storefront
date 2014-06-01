@@ -1,0 +1,6 @@
+<h1>Neighborhoods</h1>
+<ul>
+<% @neighborhood.each do |n| %>
+  <li><a href="/neighborhoods/<%= n.id %>"><%= n.name %></a></li>
+  <% end %>
+</ul>
