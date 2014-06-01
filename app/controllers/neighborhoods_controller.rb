@@ -6,6 +6,7 @@ class NeighborhoodsController < ApplicationController
   def show
     @neighborhood = Neighborhood.find(params[:id])
     @properties = Property.select { |n| n.neighborhood_id  == @neighborhood.id }
+    @ideas = Idea.all
   end
 
   def new

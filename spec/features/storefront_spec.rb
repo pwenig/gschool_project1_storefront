@@ -33,7 +33,7 @@ feature 'Managing list of commercial property' do
     fill_in 'Description', with: "Store-front location in shopping center"
     fill_in 'Image URL', with: "www.imageurl.com"
     click_on 'Add Listing'
-    click_on '1900 Broadway'
+    click_on 'Click Here to View/Add Ideas'
     click_on '1900 Broadway'
     fill_in 'Address', with: "1035 Pearl"
     click_on 'Update Listing'
@@ -49,7 +49,7 @@ feature 'Managing list of commercial property' do
     fill_in 'Description', with: "Store-front location in shopping center"
     fill_in 'Image URL', with: "www.imageurl.com"
     click_on 'Add Listing'
-    click_on '1900 Broadway'
+    click_on 'Click Here to View/Add Ideas'
     click_on '1900 Broadway'
     click_on 'Delete'
     expect(page).to_not have_content "1900 Broadway"
@@ -65,7 +65,7 @@ feature 'Managing list of commercial property' do
   fill_in 'Description', with: "Store-front location in shopping center"
   fill_in 'Image URL', with: "www.imageurl.com"
   click_on 'Add Listing'
-  click_on '1900 Broadway'
+  click_on 'Click Here to View/Add Ideas'
   fill_in 'idea_box', with: "A high end deli"
   click_on 'Add Idea'
   expect(page).to have_content "A high end deli"

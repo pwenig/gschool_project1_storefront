@@ -1,21 +1,20 @@
-<h1>Neighborhoods</h1>
-
 <div id="content">
   <div id="content_container">
     <div class="one_third">
       <a name="listing"></a>
+
       <div id="listing_container">
         <% @properties.each do |property| %>
           <img src="<%= property.image_url %>">
-          <p>Address: <a href="/properties/<%= property.id %>/edit"><%= property.address %></a></p>
+          <p>Address: <a href='/properties/<%= property.id %>/edit'><%= property.address %></a></p>
           <p>Neighborhood: <%= property.neighborhood.name %></p>
           <p>City: <%= property.city %></p>
           <p>State: <%= property.state %></p>
           <p>Description: <%= property.description %></p>
+          <a href='/properties/<%= property.id %>'>Click Here to View/Add Ideas</a>
         <% end %>
-
       </div>
     </div>
-
-      </div>
-    </div>
+  </div>
+</div>
+<div class="resetColumnSet"></div>
