@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   resources :neighborhoods
   resources :properties
   resources :ideas
+  resources :users
 
 end

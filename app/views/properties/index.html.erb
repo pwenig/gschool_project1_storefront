@@ -12,7 +12,10 @@
           <p>City: <%=@property.city %></p>
           <p>State: <%=@property.state %></p>
           <p>Description: <%=@property.description %></p>
-        <a href='/properties/<%= @property.id %>'>Click Here to View/Add Ideas</a>
+        <div class="calltoaction">
+          <h2><a href='/properties/<%= @property.id %>'>Click to add/view ideas</a></h2>
+        </div>
+
       </div>
     </div>
 

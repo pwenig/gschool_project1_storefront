@@ -15,7 +15,7 @@
  */
 
 
-//
+
 #nav_container {
   margin: auto;
   //  margin-left: 50px;
@@ -27,9 +27,6 @@ nav {
   opacity: 0.7;
   overflow: hidden;
 }
-
-
-
 
 
 //search
@@ -98,7 +95,35 @@ form.search {
   background-color: #3b2c2c;
 }
 
+//button to view or add ideas
+.calltoaction h2 a{
+  font: bold 20pt Helvetica Neue, Arial, sans serif;
+  float:left;
+  background:#00A0B0;
+  width:300px;
+  height:30px;
+  margin:0;
+  padding:10px 0 0 0;
+  border-radius:10px;
+  box-shadow: 4px 4px 0px #19AAB8;
+  text-align:center;
+  color:white;
+  text-decoration:none;
+}
 
+.calltoaction h2 a:hover {
+  margin: 4px 0 0 4px;
+  background:#19AAB8;
+  box-shadow:inset 2px 2px 2px #139f83;
+}
+
+.calltoaction h2 a:active {
+  margin: 4px 0 0 4px;
+  background:#19AAB8;
+  box-shadow:inset 4px 4px 2px #12806a;
+}
+
+//end button to view or add ideas
 
 /*Borders between each button */
 #menu li + li {
